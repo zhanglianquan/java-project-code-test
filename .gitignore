@@ -1,0 +1,59 @@
+##Grade##
+.gradle
+build
+out
+build/
+out/
+/build/
+/out/
+!gradle/wrapper/gradle-wrapper.jar
+
+##STS##
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+##IntelliJ IDEA##
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+##NetBeans##
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+##VS Code##
+.vscode/
+
+
+# Built application files
+*.apk
+
+##Maven##
+target/
+
+
+##Eclipse##
+.settings/
+.classpath
+.project
+
+# Generated files
+bin/
+gen/
+
+## Log Files
+*.log
+log/
+logs/
+/mall-api/build/
+/app-common/build/
