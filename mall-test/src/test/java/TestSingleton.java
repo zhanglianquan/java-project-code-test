@@ -1,5 +1,5 @@
 import org.junit.Test;
-import test.designpattern.Singleton;
+import src.designpattern.Singleton;
 
 /**
  * @Author zhanglianquan

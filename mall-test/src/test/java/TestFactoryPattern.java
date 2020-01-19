@@ -1,8 +1,8 @@
 import org.junit.Test;
-import test.designpattern.factorymethod.Factory;
-import test.designpattern.factorymethod.Product;
-import test.designpattern.factorymethod.ProductAFactory;
-import test.designpattern.factorymethod.ProductBFactory;
+import src.designpattern.factorymethod.Factory;
+import src.designpattern.factorymethod.Product;
+import src.designpattern.factorymethod.ProductAFactory;
+import src.designpattern.factorymethod.ProductBFactory;
 
 /**
  * @Author zhanglianquan

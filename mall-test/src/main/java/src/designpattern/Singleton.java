@@ -1,4 +1,4 @@
-package test.designpattern;
+package src.designpattern;
 /**
  * @Author zhanglianquan
  * @Description  单例模式, 使用场景：当你想控制实例数目，节省系统资源的时候

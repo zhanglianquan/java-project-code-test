@@ -1,4 +1,4 @@
-package test.designpattern.factorymethod;
+package src.designpattern.factorymethod;
 
 /**
  * @Author zhanglianquan
