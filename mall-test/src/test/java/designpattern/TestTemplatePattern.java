@@ -1,3 +1,5 @@
+package designpattern;
+
 import org.junit.Test;
 import src.designpattern.templatepattern.HouseOne;
 import src.designpattern.templatepattern.HouseTemplate;

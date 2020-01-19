@@ -1,3 +1,5 @@
+package designpattern;
+
 import org.junit.Test;
 import src.designpattern.strategy.Context;
 import src.designpattern.strategy.OldCustomerManyStrategy;

@@ -1,3 +1,5 @@
+package designpattern;
+
 import org.apache.coyote.Adapter;
 import org.junit.Test;
 import src.designpattern.Singleton;
