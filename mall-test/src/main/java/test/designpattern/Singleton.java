@@ -1,7 +1,7 @@
 package test.designpattern;
 /**
  * @Author zhanglianquan
- * @Description  单例模式
+ * @Description  单例模式, 使用场景：当你想控制实例数目，节省系统资源的时候
  * @Date 2020/1/19
  **/
 public class Singleton{
@@ -11,7 +11,7 @@ public class Singleton{
     }
     private Singleton(){}
 
-    private static Singleton getInstance(){
+    public static Singleton getInstance(){
         return StaticInnerClass.instance;
     }
 }
