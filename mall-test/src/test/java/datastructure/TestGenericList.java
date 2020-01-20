@@ -43,7 +43,6 @@ public class TestGenericList {
         for (String s:customGenericList) {
             System.out.println(s);
         }
-
         //判断列表中是否包含某个值；
         System.out.println("#######################333");
         System.out.println(customGenericList.contains("我"));
