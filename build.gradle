@@ -62,7 +62,7 @@ subprojects {
         compile("org.projectlombok:lombok:$lombokVersion")
 
         // 集成mongodb
-        compile("org.springframework.boot:spring-boot-starter-data-mongodb:$mongoDBVersion")
+//        compile("org.springframework.boot:spring-boot-starter-data-mongodb:$mongoDBVersion")
         // aop
         compile("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
         // gson
@@ -71,6 +71,6 @@ subprojects {
     }
     configurations {
         //移除spring boot 默认logger依赖
-//        all*.exclude module: 'spring-boot-starter-logging'
+        all*.exclude module: 'spring-boot-starter-logging'
     }
 }

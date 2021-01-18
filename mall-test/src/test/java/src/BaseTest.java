@@ -13,10 +13,10 @@ import src.config.BootAutoConf;
  * @author zhanglianquan
  * @date 2021/1/18
  **/
-//@Slf4j
-//@RunWith(SpringRunner.class)
+@Slf4j
+@RunWith(SpringRunner.class)
 @SpringBootTest(classes = {BootAutoConf.class})
-//@ActiveProfiles("dev")
+@ActiveProfiles("dev")
 public class BaseTest {
     @Test
     public void testInit() {
