@@ -1,4 +1,4 @@
-package src.spel;
+package src.annotation.spel;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -19,7 +19,7 @@ import java.lang.reflect.Method;
 @Aspect
 @Component
 public class StockWarnCollectAop {
-    @After("@annotation(src.spel.StockWarnCollect) &&@annotation(operationLog)")
+    @After("@annotation(src.annotation.spel.StockWarnCollect) &&@annotation(operationLog)")
     public void interceptOperation(JoinPoint point, StockWarnCollect operationLog) {
         String businessIdSpel = operationLog.pageType();
         // 方法的参数值
