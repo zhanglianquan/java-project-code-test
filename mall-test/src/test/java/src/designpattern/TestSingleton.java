@@ -1,7 +1,6 @@
-package designpattern;
+package src.designpattern;
 
 import org.junit.Test;
-import src.designpattern.Singleton;
 
 /**
  * @Author zhanglianquan

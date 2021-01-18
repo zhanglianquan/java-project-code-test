@@ -1,10 +1,6 @@
-package multithread;
+package src.multithread;
 
 import org.junit.Test;
-import src.multithread.Counter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @Author zhanglianquan

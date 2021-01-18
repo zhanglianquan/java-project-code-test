@@ -1,20 +1,13 @@
-package optional;
+package src.optional;
 
 import org.junit.Test;
-import org.springframework.util.StringUtils;
-import src.multithread.Counter;
-import src.optional.Student;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoField;
 import java.util.*;
-import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 

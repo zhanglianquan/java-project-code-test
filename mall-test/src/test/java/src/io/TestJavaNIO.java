@@ -1,7 +1,6 @@
-package io;
+package src.io;
 
 import org.junit.Test;
-import src.io.bio.JavaBIO;
 import src.io.nio.JavaNIO;
 
 /**
@@ -9,11 +8,12 @@ import src.io.nio.JavaNIO;
  * @Description
  * @Date 2020/1/19
  **/
-public class TestJavaBIO {
+public class TestJavaNIO {
     @Test
     public void testNIO(){
-        JavaBIO.readBIO();
-        JavaBIO.writeBIO();
+        JavaNIO.readNIO();
+        JavaNIO.writeNIO();
+
     }
 
 }

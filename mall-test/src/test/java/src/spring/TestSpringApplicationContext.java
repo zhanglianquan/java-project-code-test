@@ -1,7 +1,6 @@
-package spring;
+package src.spring;
 
 import org.springframework.boot.SpringApplication;
-import src.spring.CustomSpringApplicationContext;
 import src.spring.log.SysLog;
 
 @CustomSpringApplicationContext

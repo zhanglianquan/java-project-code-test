@@ -1,7 +1,6 @@
-package datastructure;
+package src.datastructure;
 
 import org.junit.Test;
-import src.datastructure.CustomGenericList;
 
 /**
  * @Author zhanglianquan

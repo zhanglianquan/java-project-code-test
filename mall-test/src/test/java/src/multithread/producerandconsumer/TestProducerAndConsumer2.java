@@ -1,4 +1,4 @@
-package multithread.producerandconsumer;
+package src.multithread.producerandconsumer;
 
 import src.multithread.producerconsumer.program2.ProducerAndCustomer2;
 

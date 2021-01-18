@@ -1,8 +1,6 @@
-package designpattern;
+package src.designpattern;
 
-import org.apache.coyote.Adapter;
 import org.junit.Test;
-import src.designpattern.Singleton;
 import src.designpattern.adapter.ObjectAdapter;
 import src.designpattern.adapter.Ps2;
 import src.designpattern.adapter.Usber;
