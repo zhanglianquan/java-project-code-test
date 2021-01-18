@@ -1,12 +1,13 @@
 package src.annotation.tagertanotation;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
  * @author zhanglianquan
  * @date 2021/1/18
  **/
-@Service
+@Component("userServiceImpl")
 public class UserServiceImpl {
     @TargetDataSource("test1")
     public String test1() {
