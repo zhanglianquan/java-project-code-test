@@ -10,6 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.expression.StandardBeanExpressionResolver;
 import org.springframework.stereotype.Component;
+import src.AppMain;
 
 /**
  * @author zhanglianquan
@@ -43,7 +44,7 @@ public class TargetDataSourceAspect {
 //		System.out.println("s = " + s);
         Object s = "";
         String value = targetDataSource.value();
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringBootApplication.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppMain.class);
         ConfigurableBeanFactory beanFactory = context.getBeanFactory();
         String resolvedValue = beanFactory.resolveEmbeddedValue(value);
         System.out.println("resolvedValue = " + resolvedValue);
