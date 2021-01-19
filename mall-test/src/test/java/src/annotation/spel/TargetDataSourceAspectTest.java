@@ -36,7 +36,7 @@ public class TargetDataSourceAspectTest {
 
     @Test
     public void testSetDataSource3() {
-        String s = userServiceImpl.test3();
+        String s = userServiceImpl.test3("123233");
 //        assertEquals("test3 method...", s);
         System.out.println(s);
     }

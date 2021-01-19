@@ -1,9 +1,6 @@
 package src.annotation.tagertanotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * @author zhanglianquan
@@ -12,6 +9,8 @@ import java.lang.annotation.Target;
  **/
 @Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
 @Retention(RetentionPolicy.RUNTIME)
+//@Inherited
+@Documented
 public @interface TargetDataSource {
     String value() default "default";
 }
