@@ -90,7 +90,7 @@ public class TargetDataSourceAspect {
 
 //        //被代理的方法上的注解
         TargetDataSource targetDataSource = method.getAnnotation(TargetDataSource.class);
-        String businessIdSpel = targetDataSource.value();
+        String value = targetDataSource.value();
 
         //获取被拦截方法参数名列表(使用Spring支持类库)
         LocalVariableTableParameterNameDiscoverer localVariableTable = new LocalVariableTableParameterNameDiscoverer();
@@ -107,9 +107,20 @@ public class TargetDataSourceAspect {
         }
         String businessId = null;
         // 使用变量方式传入业务动态数据
-        if(businessIdSpel.matches("^#.*.$")) {
+        if(value.matches("^#.*.$")) {
             // 解析SpEL表达式获取结果
-            businessId = parser.parseExpression(businessIdSpel, parserContext).getValue(context, String.class);
+            //  这种只能用到类似这样#{#userId} 的spel表达式
+//            businessId = parser.parseExpression(value, parserContext).getValue(context, String.class);
+            //  这种只能用到类似这样#userId的spel表达式
+//            businessId = parser.parseExpression(value).getValue(context, String.class);
+
+            // 下面才能动态用到 EnvUtil.getValue('1')
+            AnnotationConfigApplicationContext contextEnvUtil = new AnnotationConfigApplicationContext(AppMain.class);
+            ConfigurableBeanFactory beanFactory = contextEnvUtil.getBeanFactory();
+            String resolvedValue = beanFactory.resolveEmbeddedValue(value);
+            Object s = resolver.evaluate(resolvedValue, new BeanExpressionContext(beanFactory, null));
+            System.out.println(s);
+
         }
         System.out.println(businessId);
 

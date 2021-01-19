@@ -20,6 +20,8 @@ public class UserServiceImpl {
     }
 
     @TargetDataSource("#{EnvUtil.getValue('1')}")
+//    @TargetDataSource("#{#userId}")
+//    @TargetDataSource("#userId")
     public String test3(String userId) {
         return "test3 method...";
     }
