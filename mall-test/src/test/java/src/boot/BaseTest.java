@@ -1,4 +1,4 @@
-package src;
+package src.boot;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

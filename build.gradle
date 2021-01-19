@@ -38,14 +38,14 @@ subprojects {
         compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
 
         // Mybatis
-//        compile("org.mybatis:mybatis:$mybatisStarterVersion")
+        compile("org.mybatis:mybatis:$mybatisStarterVersion")
         // MyBatis 生成器
-//        compile("org.mybatis.generator:mybatis-generator-core:$mybatisGeneratorStarterVersion")
+        compile("org.mybatis.generator:mybatis-generator-core:$mybatisGeneratorStarterVersion")
         // Log4j2
         compile("org.springframework.boot:spring-boot-starter-log4j2:$springBootVersion")
 
         // Mysql数据库驱动 JDBC Driver
-//        compile("mysql:mysql-connector-java:$mysqlConnectorVersion")
+        compile("mysql:mysql-connector-java:$mysqlConnectorVersion")
 
         // JSON
         compile("com.alibaba:fastjson:$fastjsonVersion")
