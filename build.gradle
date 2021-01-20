@@ -58,6 +58,10 @@ subprojects {
         compile("io.springfox:springfox-swagger2:$springfoxSwagger2Version")
         compile("io.springfox:springfox-swagger-ui:$springfoxSwaggerUIVersion")
 
+        // 集成commons-lang3和commons-collections4
+        compile("org.apache.commons:commons-lang3:$apacheCommonsLang3")
+        compile("org.apache.commons:commons-collections4:$apacheCommonsCollections4")
+
         // lombok依赖
         compile("org.projectlombok:lombok:$lombokVersion")
 

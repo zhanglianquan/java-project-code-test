@@ -1,6 +1,7 @@
 package src.optional;
 
 import org.junit.Test;
+import src.config.SizeInfoTableEnum;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -40,6 +41,11 @@ public class TestOptional {
 
     @Test
     public void testOptional(){
+        String skc = "swsadafasbra04201119989";
+        String sizeKey = "XS";
+        String country = "OTHER";
+        String sizeDescInfo = SizeInfoTableEnum.getSizeDescInfo(skc, sizeKey, country);
+
         System.out.println(TestOptional.str2TimeStamp("2020-09-21 21:51:53"));
         System.out.println(TestOptional.getTimeStampByDate("2020-09-21 21:51:53", "yyyy-MM-dd HH:mm:ss", "Asia/Shanghai"));
         System.out.println(TestOptional.getTimeStampByDate("2020-09-21 21:51:53", "yyyy-MM-dd HH:mm:ss", "Asia/Shanghai"));
