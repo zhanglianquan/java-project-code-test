@@ -71,6 +71,9 @@ subprojects {
         compile("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
         // gson
         compile("com.google.code.gson:gson:2.6")
+        // jol
+        compile("org.openjdk.jol:jol-core:0.8")
+
 
     }
     configurations {
